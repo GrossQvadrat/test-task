@@ -1,0 +1,232 @@
+/* стили по умолчанию */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/* стили списка товаров */
+.product_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product_list_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.item_img{
+    width: 250px;
+}
+.item_buttons {
+    display: flex;
+    flex-direction: column;
+}
+.product_list_button{
+    width: 110px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.order_button{
+    color: #ffffff;
+    background-color: #cc1051;
+    margin-bottom: 20px;
+}
+.shopping_cart_button {
+    background-color: #ccc;
+    color: #555;
+}
+.item_description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    height: 100%;
+    width: 100%;
+}
+.product_item_price {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #555;
+}
+/* стили попапа корзины */
+.popup_cart {
+    width: 300px;
+    position: fixed;
+    top: 20px;
+    right: 5%;
+    background-color: rgb(245, 243, 243);
+    box-shadow: 1px 6px 10px rgba(0,0,0,0.4);
+}
+.popup_head {
+    background-color: rgb(129, 126, 126);
+    width: 100%;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.popup_head_title {
+    margin-left: 10px;
+}
+.popup_body {
+    display: flex;
+    padding: 4px;
+    background-color: rgb(245, 243, 243);
+}
+img.popup_item_img {
+    width: 106px;
+}
+.popup_cart_button {
+    width: 160px;
+    height: 40px;
+    color: #ffffff;
+    background-color: #cc1051;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.popup_close_button{
+    width: 12px;
+    height: 12px;
+}
+.popup_close_button::after , .popup_close_button::before{
+    content: ' ';
+    width: 2px;
+    height: 10px;
+    background-color: #cc1051;
+    position: absolute;
+    right: 10px;
+    top: 55px;
+    cursor: pointer;
+}
+.popup_close_button:after{
+    transform: rotate(45deg)
+}
+.popup_close_button::before{
+    transform: rotate(-45deg)
+}
+.popup_item_price{
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #555;
+}
+/* стили попапа заказа */
+.order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(24, 23, 23, 0.4);
+    position: fixed;
+    top: 0;
+}
+.order_popup {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 250, 250);
+    width: 76%;
+    max-width: 960px;
+}
+.order_popup_head {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.order_popup_body {
+    display: flex;
+}
+.order_popup_body_left {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.order_popup_body_right {
+    display: flex;
+    width: 60%;
+    padding: 15px;
+    border-left: 5px solid #cc1051;
+}
+.order_popup_footer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin: 20px;
+}
+.order_popup_body_textarea{
+    background: #ccc;
+    height: 55%;
+    resize: none;
+    width: 80%;
+}
+.order_popup_img {
+    width: 176px;
+    margin-right: 15px;
+}
+.order_number {
+    background: #ccc;
+    height: 25px;
+}
+.order_submit{
+    width: 110px;
+    height: 30px;
+    color: #ffffff;
+    background-color: #cc1051;
+    margin-top: 20px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.order_popup_price {
+    font-size: 24px;
+    color: #cc1051;
+}
+.order_popup_title {
+    font-size: 18px;
+    font-weight: 600;
+}
+.order_popup_close_button{
+    width: 12px;
+    height: 12px;
+}
+.order_popup_close_button::after , .order_popup_close_button::before{
+    content: ' ';
+    width: 2px;
+    height: 10px;
+    background-color: #cc1051;
+    position: absolute;
+    cursor: pointer;
+}
+.order_popup_close_button:after{
+    transform: rotate(45deg)
+}
+.order_popup_close_button::before{
+    transform: rotate(-45deg)
+}
